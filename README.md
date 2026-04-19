@@ -65,6 +65,19 @@ The dashboard provides:
 * Customer Distribution Analysis
 
 
+## SQL Queries Used
+
+Example:
+
+```sql
+SELECT 
+    category,
+    SUM(revenue) AS total_revenue
+FROM ecommerce_sales
+GROUP BY category
+ORDER BY total_revenue DESC;
+```
+
 
 ##  Key Insights
 
@@ -83,18 +96,6 @@ Users can filter dashboard by:
 * Year
 
 This allows dynamic data exploration.
-
-## SQL Queries Used
-
-Example:
-
-sql
-SELECT 
-    category,
-    SUM(revenue) AS total_revenue
-FROM ecommerce_sales
-GROUP BY category
-ORDER BY total_revenue DESC;
 
 
 ## How to Use This Project
